@@ -1,0 +1,774 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="EF4 - Agência de Tecnologia">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52598075-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52598075-7');
+</script>
+
+<!-- Site Title   -->
+<title>Site Pb by Vito</title>
+<!-- Fav Icons   -->
+<link rel="icon" href="images/casarao.png" type="image/x-icon">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+<!-- Fonts Awesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+<!-- animate Effect -->
+<link href="css/animate.css" rel="stylesheet">
+<!-- Main CSS -->
+<link href="css/style - azul.css" rel="stylesheet">
+<!-- Responsive CSS -->
+<link href="css/responsive.css" rel="stylesheet">
+
+<link href="css/menuAcessibilidade.css" rel="stylesheet" type="text/css" />        <meta property="og:locale" content="pt_br">
+        <meta property="og:site_name" content="Prefeitura Municipal de Presidente Bernardes"/>
+        <meta property="og:title" content="Página inicial - Prefeitura Municipal de Presidente Bernardes"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="http://presidentebernardes.mg.gov.br/portal/images/logo.png"/>
+        <meta property="og:image:width" content="800"> 
+        <meta property="og:image:height" content="600">
+        <meta property="og:url" content="https://www.presidentebernardes.mg.gov.br/portal/"/>
+
+        <meta name="description" content="Presidente Bernardes é uma cidade do Estado do Minas Gerais. Os habitantes se chamam bernardenses.Prefeitura de Presidente Bernardes Rua São José, 21. O município de Presidente Bernardes tem como prefeito Jazon, como chefe do Executivo municipal.">
+        <meta name="keywords" content="Prefeitura, Municipal, Presidente, Bernardes, Calambau, MG, minas, gerais, bernardenses">
+
+
+
+    </head>
+    <body>
+        <header id="header" class="head">
+    <div class="top-header">
+        <div class="container">
+            <div class="row ">
+                <ul class="contact-detail2 col-md-6 pull-left">
+                    <li> <a href="tel:3235640000" ><i class="fa fa-mobile"></i>(32) 3564-0000</a> </li>
+                    <li> <a href="mailto:contato@presidentebernardes.mg.gov.br"><i class="fa fa-envelope-o"></i> contato@presidentebernardes.mg.gov.br</a> </li>
+                </ul>
+                <div class="social-links col-md-6 pull-right">
+                    <ul class="social-icons pull-right">
+                        <li> <a href="https://www.facebook.com/presidentebernardesmg/" target="_blank"><i class="fa fa-facebook"></i></a> </li>
+                        <li> <a href="https://www.instagram.com/presidentebernardesmg/" target="_blank"><i class="fa fa-instagram"></i></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default navbar-menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+                    <span class="sr-only">Navegação</span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="index.php">
+                    <!--<div class="logo-text"><span><samp>M</samp>Medi</span>camp</div>-->
+                    <img src="images/logo-presidente.svg" alt="logo" width="180">
+                </a> 
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeIn">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Município<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="municipio.php">A Cidade</a></li>
+                            <li><a href="historia.php">Nossa História</a></li>
+                            <!--<li><a href="noticias.php">Notícias</a></li>-->
+                            <li><a href="saude-em-foco.php">Saúde em Foco</a></li>
+                            <li><a href="organograma.php">Organograma</a></li>
+                            <li><a href="telefones.php">Telefones Úteis</a></li>
+                            <li><a href="apa.php">Área de Proteção Ambiental</a></li>
+                            <li><a href="pmsb.php">Plano Municipal de Saneamento</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Estrutura ADM <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="gabinete.php?cargo=Prefeito">Prefeito</a></li>
+                            <li><a href="gabinete.php?cargo=Vice">Vice Prefeito</a></li>
+                            <li><a href="organograma.php">Organograma</a></li>
+                                                                <li><a href="estrutura-adm.php?estrutura=1">ADMINISTRAÇÃO E FAZENDA</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=14">ADMINISTRAÇÃO, PLANEJAMENTO E CONTROLE</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=2">AGROPECUÁRIA, ABASTECIMENTO E MEIO AMBIENTE</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=3">ASSISTÊNCIA E PROMOÇÃO SOCIAL</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=4">CULTURA, ESPORTE, LAZER E TURISMO</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=5">EDUCAÇÃO</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=6">GABINETE</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=10">GOVERNO</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=12">LICITAÇÃO E CONTRATOS</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=13">LIMPEZA PÚBLICA</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=7">OBRAS E URBANISMO</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=9">SAÚDE</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=8">SERVIÇO DE PESSOAL E RECURSOS HUMANOS</a></li>
+                                                                    <li><a href="estrutura-adm.php?estrutura=11">TESOURARIA</a></li>
+                                                        </ul>
+                    </li>
+
+                    <li><a href="licitacoes.php" >Licitação</a></li>
+                    <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Work <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="portfolio-3.html">3 Colums</a></li>
+                            <li><a href="portfolio-4.html">4 Colums</a></li>
+                        </ul>
+                    </li>-->
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Editais <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chamamentos-publico.php">Chamamento Público</a></li>
+                            <li><a href="concursos.php">Concursos e Processos Seletivos</a></li>
+                            <li><a href="reurb.php">Notificação REURB</a></li>
+                        </ul>
+                    </li>
+                    <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Legislação <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Atas</a></li>
+                            <li><a href="">Decretos</a></li>
+                            <li><a href="">Leis</a></li>
+                            <li><a href="">Portarias</a></li>
+                        </ul>
+                    </li>-->
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Legislação <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="decretos.php">Decretos</a></li>
+                            <li><a href="leis.php?tipo=Ordinária">Leis Ordinárias</a></li>
+                            <li><a href="leis.php?tipo=Complementar">Leis Complementares</a></li>
+                            <li><a href="portarias.php">Portarias</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Meio Ambiente <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="apa.php">Área de Proteção Ambiental</a></li>
+                            <li><a href="pmsb.php">Plano Municipal de Saneamento</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Transparência <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="transparencia.php">Portal da Transparência</a></li>
+                            <li><a href="diario.php">Diário Oficial</a></li>
+                            <li><a href="esic.php">e-Sic</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Serviços <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                    <li><a href="nfe.php" >NF Eletrônica</a></li>
+                    <li><a href="cnd.php" >CND</a></li>
+                    <li><a href="iptu.php" >IPTU</a></li>
+                        </ul>
+                    </li> 
+                    <!--<li><a href="contact.html">Contato</a></li>-->
+                </ul>
+            </div>
+            <!--/.nav-collapse --> 
+        </div>
+    </nav>
+</header>
+        <section id="slider" class="">
+            <!-- Carousel -->
+            <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators visible-lg visible-md">
+                    <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-slide" data-slide-to="1"></li>
+                    <li data-target="#main-slide" data-slide-to="2"></li>
+                </ol><!--/ Indicators end-->
+
+                <!-- Carousel inner -->
+                <div class="carousel-inner">
+
+                    <div class="item active" style="background-image:url(images/slide/casaroes.png)">
+                        <!--<div class="slider-content text-left">
+                            <div class="col-md-12">
+                                <h2 class="slide-title effect2">Empowering People</h2>
+                                <h3 class="slide-sub-title effect3">To Improve Their Lives</h3>
+                                <p class="slider-description lead effect3">Praesent convallis tortor et enim laoreet, vel consectetur purus latoque.</p>
+                                <p class="effect3">
+                                    <a href="#" class="slider btn btn-primary">Our Service</a>
+                                    <a href="#" class="slider btn btn-secondary">About Us</a>
+                                </p>      
+                            </div>
+                        </div>-->
+                    </div><!--/ Carousel item 1 end -->
+
+
+                    <div class="item" style="background-image:url(images/slide/igreja.png)">
+                        <!--<div class="slider-content">
+                            <div class="col-md-12 text-center">
+                                <h2 class="slide-title effect4">Of care every day</h2>
+                                <h3 class="slide-sub-title effect5">Higher standards</h3>
+                                <p>
+                                    <a href="#" class="slider btn btn-primary">Our Services</a>
+                                </p>      
+                            </div>
+                        </div>-->
+                    </div><!--/ Carousel item 2 end -->
+
+
+                    <div class="item" style="background-image:url(images/slide/cachoeira.png)">
+                        <!--<div class="slider-content text-right">
+                             <div class="col-md-12">
+                                 <h2 class="slide-title effect6">To better healthcare</h2>
+                                 <h3 class="slide-sub-title effect7">Leading the way</h3>
+                                 <p class="slider-description lead effect7">Praesent convallis tortor et enim laoreet, vel consectetur purus latoque.</p>
+                                 <p>
+                                     <a href="#" class="slider btn btn-primary">Consultation</a>
+                                     <a href="#" class="slider btn btn-primary border">Know More</a>
+                                 </p>      
+                             </div>
+                         </div>-->
+                    </div><!--/ Carousel item 3 end -->
+
+                </div><!-- Carousel inner end-->
+
+                <!-- Controllers -->
+                <a class="left carousel-control" href="#main-slide" data-slide="prev">
+                    <span><i class="fa fa-angle-left"></i></span>
+                </a>
+                <a class="right carousel-control" href="#main-slide" data-slide="next">
+                    <span><i class="fa fa-angle-right"></i></span>
+                </a>
+            </div><!--/ Carousel end -->
+        </section>
+
+        <!--<section id="section8" >
+            <div class="container">
+                <div class="row">
+                    <br/>
+                    <img src="images/periodoeleitoral.jpg" width="100%">
+                </div>
+            </div>
+        </section>--
+
+        <section id="section8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <br/><br/>
+                        <a href="http://presidentebernardes.mg.gov.br/portal/noticia.php?noticia=1161">
+                            <img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/9%C2%BAFESTIVALDECULTURAARTESANATOEGASTRONOMIADEPRESIDENTEBERNARDES-MG-1648170976623d17e06fd54l.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <br/><br/>
+                        <img src="images/banner_defesacivil.png" alt="Defesa Cívil"/>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <!--<section id="section8" >
+            <div class="container">
+                <div class="row">
+                    <br/><br/>
+                    <div class="col-md-12 col-lg-12">
+                        <a href="covid.php" ><img src="images/covid.jpg" alt="Legislação"/></a>
+                    </div>
+                    <div class="col-md-8 col-lg-8">
+                        <a href="declaracao-covid.php" ><img src="images/declaracaocovid.jpg" alt="Declaração"/></a>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <!--<section id="section2" class="section-margine">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 nopadding">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="section-2-box-left wow fadeInLeft">
+                                <h4>ADMINISTRAÇÃO 2017 - 2020</h4>
+                                <p class="text-justify">A administração municipal atua de forma a estruturar cada vez mais a cidade e promover mais saúde, 
+                                    educação, bem-estar social e melhor infraestrutura. Com trabalho sério, todas as secretarias buscam se integrar 
+                                    para fazer o melhor por todos. O homem do campo recebe o apoio necessário para seu dia a dia e, assim, todos ficam 
+                                    satisfeitos em Presidente Bernardes.
+                                    Promover uma gestão participativa e transparente, provendo o bem-estar social ao servir o município a partir dos 
+                                    princípios constitucionais éticos de responsabilidade social e desenvolvimento local e regional, por meio de ações 
+                                    e serviços públicos efetivos, na busca da qualidade de vida da comunidade.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4  col-sm-12">
+                        <div class="section-2-box-right wow fadeInRight">
+                            <div class="section-2-box-left wow fadeInLeft">
+                                <figure><img src="images/adm2017-2020.jpg" class="img-responsive"></figure>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <section  id="section5" class="section-5 section-margine">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header class="title-head">
+                            <a href="noticias.php">
+                                <h2 style="color: blue">Últimas Notícias</h2>
+                            </a>
+                        </header>
+                    </div>
+                </div>
+                <div class="row my-team">
+                                        <!-- <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                         <div class="my-member-img">
+                             <a href="noticia.php?noticia="><img src="" width="350px" height="200px" alt="" title=""></a>
+                         </div>
+                         <h4 style="color: blue"></h4>
+                         <p style="text-align: justify; font-family: Roboto; font-size: 16px"></p>
+                     </div>-->
+                                            <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                            <div class="my-member-img">
+                                <a href="noticia.php?noticia=2272"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/InscriçõesabertasparaasoficinasnoServiçodeConvivênciaeFortalecimentodeVínculos(SCFV)-17496029566848d28c4f4e6.jpeg" width="350px" height="200px" alt="Inscrições abertas para as oficinas no Serviço de Convivência e Fortalecimento de Vínculos (SCFV)" title="Inscrições abertas para as oficinas no Serviço de Convivência e Fortalecimento de Vínculos (SCFV)"></a>
+                            </div>
+                            <h4 style="color: blue">06/06/2025</h4>
+                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">Inscrições abertas para as oficinas no Serviço de Convivência e Fortalecimento de Vínculos (SCFV)</p>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                            <div class="my-member-img">
+                                <a href="noticia.php?noticia=2271"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/ComemoraçãoEspecial-174713944768233b7764489.jpeg" width="350px" height="200px" alt="Comemoração Especial!" title="Comemoração Especial!"></a>
+                            </div>
+                            <h4 style="color: blue">09/05/2025</h4>
+                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">Comemoração Especial!</p>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                            <div class="my-member-img">
+                                <a href="noticia.php?noticia=2270"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/DiaD-conscientizaçãosobreoAutismo-17450723056803b0b157e069.jpg" width="350px" height="200px" alt="Dia D - conscientização sobre o Autismo " title="Dia D - conscientização sobre o Autismo "></a>
+                            </div>
+                            <h4 style="color: blue">19/04/2025</h4>
+                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">Dia D - conscientização sobre o Autismo </p>
+                        </div>
+                                    </div>
+                <hr>
+
+                <div class="row my-team">
+                                            <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                            <div class="my-member-img">
+                                <a href="noticia.php?noticia=2269"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/MêsdasMulheres-174312875267e608b007fa51.jpg" width="350px" height="200px" alt="Março, Mês das Mulheres " title="Março, Mês das Mulheres "></a>
+                            </div>
+                            <h4 style="color: blue">25/03/2025</h4>
+                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">Março, Mês das Mulheres </p>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                            <div class="my-member-img">
+                                <a href="noticia.php?noticia=2268"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/SessãoEspecialemcomemoraçãoaoMêsdaMulher-174232557467d9c7461570a.jpeg" width="350px" height="200px" alt="Sessão Especial em comemoração ao Mês da Mulher" title="Sessão Especial em comemoração ao Mês da Mulher"></a>
+                            </div>
+                            <h4 style="color: blue">18/03/2025</h4>
+                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">Sessão Especial em comemoração ao Mês da Mulher</p>
+                        </div>
+                                            <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                            <div class="my-member-img">
+                                <a href="noticia.php?noticia=2267"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/DiaInternacionaldaMulher-174159707067cea98eece9f.jpeg" width="350px" height="200px" alt="Dia Internacional da Mulher" title="Dia Internacional da Mulher"></a>
+                            </div>
+                            <h4 style="color: blue">08/03/2025</h4>
+                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">Dia Internacional da Mulher</p>
+                        </div>
+                                    </div>
+                <hr>
+                <!--
+                <div class="row my-team">
+                                                        <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                                            <div class="my-member-img">
+                                                <a href="noticia.php?noticia=2266"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/COMUNICADO-173920569467aa2c3e8c82c8.jpg" width="350px" height="200px" alt="COMUNICADO" title="COMUNICADO"></a>
+                                            </div>
+                                            <h4 style="color: blue">10/02/2025</h4>
+                                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">COMUNICADO</p>
+                                        </div>
+                                                        <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                                            <div class="my-member-img">
+                                                <a href="noticia.php?noticia=2265"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/Feliz2025-173569523967749b87a844cn.jpg" width="350px" height="200px" alt="Feliz 2025!" title="Feliz 2025!"></a>
+                                            </div>
+                                            <h4 style="color: blue">31/12/2024</h4>
+                                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">Feliz 2025!</p>
+                                        </div>
+                                                        <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                                            <div class="my-member-img">
+                                                <a href="noticia.php?noticia=2264"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/FELIZNATA-17355797246772d84c57db8n.jpg" width="350px" height="200px" alt="FELIZ NATA!!!" title="FELIZ NATA!!!"></a>
+                                            </div>
+                                            <h4 style="color: blue">25/12/2024</h4>
+                                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">FELIZ NATA!!!</p>
+                                        </div>
+                                </div>
+                <hr>
+
+                <div class="row my-team">
+                                                        <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                                            <div class="my-member-img">
+                                                <a href="noticia.php?noticia=2263"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/InventárioMunicipaldoPatrimônioCultural-173447636067620248d6643n.jpg" width="350px" height="200px" alt="Inventário Municipal do Patrimônio Cultural" title="Inventário Municipal do Patrimônio Cultural"></a>
+                                            </div>
+                                            <h4 style="color: blue">16/12/2024</h4>
+                                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">Inventário Municipal do Patrimônio Cultural</p>
+                                        </div>
+                                                        <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                                            <div class="my-member-img">
+                                                <a href="noticia.php?noticia=2262"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/InformativoàPopulaçãodePresidenteBernardes-1734476282676201fac2bd8n.jpg" width="350px" height="200px" alt="Informativo à População de Presidente Bernardes" title="Informativo à População de Presidente Bernardes"></a>
+                                            </div>
+                                            <h4 style="color: blue">11/12/2024</h4>
+                                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">Informativo à População de Presidente Bernardes</p>
+                                        </div>
+                                                        <div class="col-md-4 col-sm-6 my-team-member wow fadeInUp">
+                                            <div class="my-member-img">
+                                                <a href="noticia.php?noticia=2261"><img src="https://www.presidentebernardes.mg.gov.br/uploads-imagens/ÉHOJE-173358609567546caf52f92n.jpg" width="350px" height="200px" alt="É HOJE!" title="É HOJE!"></a>
+                                            </div>
+                                            <h4 style="color: blue">07/12/2024</h4>
+                                            <p style="text-align: justify; font-family: Roboto; font-size: 16px">É HOJE!</p>
+                                        </div>
+                                </div>-->
+            </div>
+        </section>
+
+        <section id="section1" class="section-margine">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <header class="title-head">
+                            <a href="licitacoes.php">
+                                <h2>Licitação</h2>
+                                <p>Acompanhe os Processos Licitatórios do Município de Presidente Bernardes</p>
+                            </a>
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                                            <div class="col-md-3  col-sm-6">
+                            <div class="section-1-box wow bounceIn" data-wow-delay=".3s">
+                                <div class="section-1-box-icon-background"><!--<i class="fa fa fa-heartbeat fa-2x"></i>-->
+                                    <a href="licitacao.php?licitacao=710"><img src="images/tome_nota.png" alt="Edital Calcário e Anexos" /></a>
+                                </div>
+                                <h4 class="text-center">
+                                    <a href="licitacao.php?licitacao=710">Edital Calcário e Anexos </a>
+                                </h4>
+                                <!--<p class="text-justify"><p>&nbsp;REGISTRO DE PRE&Ccedil;OS PARA AQUISI&Ccedil;&Atilde;O DE CALC&Aacute;RIO...</p>-->
+
+                                <p><b>Data de abertura: </b>29/07/2025</p>
+                            </div>
+                        </div>                    
+                                            <div class="col-md-3  col-sm-6">
+                            <div class="section-1-box wow bounceIn" data-wow-delay=".3s">
+                                <div class="section-1-box-icon-background"><!--<i class="fa fa fa-heartbeat fa-2x"></i>-->
+                                    <a href="licitacao.php?licitacao=704"><img src="images/tome_nota.png" alt="Edital Material de Limpeza com Registro na Anvisa e Anexos" /></a>
+                                </div>
+                                <h4 class="text-center">
+                                    <a href="licitacao.php?licitacao=704">Edital Material de Limpeza com Registro na Anvisa e Anexos </a>
+                                </h4>
+                                <!--<p class="text-justify"><p>O objeto da presente licita&ccedil;&atilde;o compreende o REGISTRO DE PRE&Ccedil;OS PARA...</p>-->
+
+                                <p><b>Data de abertura: </b>23/07/2025</p>
+                            </div>
+                        </div>                    
+                                            <div class="col-md-3  col-sm-6">
+                            <div class="section-1-box wow bounceIn" data-wow-delay=".3s">
+                                <div class="section-1-box-icon-background"><!--<i class="fa fa fa-heartbeat fa-2x"></i>-->
+                                    <a href="licitacao.php?licitacao=703"><img src="images/tome_nota.png" alt="Edital Material de Limpeza e anexos" /></a>
+                                </div>
+                                <h4 class="text-center">
+                                    <a href="licitacao.php?licitacao=703">Edital Material de Limpeza e anexos </a>
+                                </h4>
+                                <!--<p class="text-justify"><p>O objeto da presente licita&ccedil;&atilde;o compreende o REGISTRO DE PRE&Ccedil;OS PARA...</p>-->
+
+                                <p><b>Data de abertura: </b>18/07/2025</p>
+                            </div>
+                        </div>                    
+                                            <div class="col-md-3  col-sm-6">
+                            <div class="section-1-box wow bounceIn" data-wow-delay=".3s">
+                                <div class="section-1-box-icon-background"><!--<i class="fa fa fa-heartbeat fa-2x"></i>-->
+                                    <a href="licitacao.php?licitacao=702"><img src="images/tome_nota.png" alt="Edital Formulas" /></a>
+                                </div>
+                                <h4 class="text-center">
+                                    <a href="licitacao.php?licitacao=702">Edital Formulas </a>
+                                </h4>
+                                <!--<p class="text-justify"><p>O objeto da presente licita&ccedil;&atilde;o compreende o REGISTRO DE PRE&Ccedil;OS PARA...</p>-->
+
+                                <p><b>Data de abertura: </b>17/07/2025</p>
+                            </div>
+                        </div>                    
+                                        <br>
+                </div>
+            </div>
+        </section>
+
+        <section id="section8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <a href="transparencia.php" ><img src="images/banner_transparencia.png" alt="Portal da Transparência"/></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section14" class="section-margine">
+            <div class="container">
+                <div class="row">
+                                            <div class="col-md-4 col-lg-4">
+                            <div class="section-14-box wow fadeInUp">
+                                <img src="images/concurso.png" class="img-responsive" alt="Concurso público e processos seletivos - Presidente Bernardes">
+                                <h3><a href="concurso.php?concurso=13">PROCESSO SELETIVO SIMPLIFICADO Nº 001/2025 </a></h3>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="comments">
+                                            <a href="concurso.php?concurso=13" class="btn btn-primary btn-sm">30/03/2025</a>
+                                            <a href="concurso.php?concurso=13" class="btn btn-primary btn-sm">Saiba mais</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-justify"></p>
+                            </div>
+                        </div>
+                                        <div class="col-md-4 col-lg-4">
+                        <div class="section-14-box wow fadeInUp" data-wow-delay=".3s">
+                            <img src="images/chamamento.png" class="img-responsive" alt="Chamamento Pùblico - Presidente Bernardes">
+                                                            <h3><a href="chamamentos-publico.php?chamamento=4">EDITAL DE CHAMAMENTO PÚBLICO Nº 003/2025</a></h3>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="comments">
+                                            <a href="chamamentos-publico.php?chamamento=4" class="btn btn-primary btn-sm">03/06/2025</a>
+                                            <a href="chamamentos-publico.php?chamamento=4" class="btn btn-primary btn-sm">Saiba mais...</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                                    </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="section-14-box wow fadeInUp" data-wow-delay=".3s">
+                            <img src="images/saude.png" class="img-responsive" alt="Saúde em Foco - Presidente Bernardes">
+                                                            <h3><a href="saude-detalhe.php?saude=8">Informativo 008</a></h3>
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="comments">
+                                            <a href="saude-detalhe.php?saude=8" class="btn btn-primary btn-sm">09/07/2019</a>
+                                            <a href="saude-detalhe.php?saude=8" class="btn btn-primary btn-sm">Saiba mais...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p> <a href="saude-detalhe.php?saude=8" ><p>Sa&uacute;de em Foco - Julho a Dezembro de 2019</p>
+</a></p>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section10" class="section-10-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <a href="http://www.saude.gov.br/saude-de-a-z/dengue" target="_blank"><img src="images/dengue.png" alt="Combate à Dengue"/></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section8">
+            <div class="container">
+                <div class="row">
+                    <br/><br/>
+                    <video src="video/institucional.mp4" controls poster="images/video.png" width="100%" height="550">
+                        Desculpa, o seu navegador não suporta vídeos incorporados, 
+                        mas você pode <a href="video/institucional.mp4">baixá-lo</a>
+                        e assistir pelo seu reprodutor de mídia favorito!
+                    </video>
+                </div>
+            </div>
+        </section>
+
+                                <!--<section id="section9" class="section-9-background">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-2 col-sm-4 col-xs-6"><img src="images/clients/1.png" class="img-responsive wow fadeInUp" alt=""></div>
+                                            <div class="col-md-2 col-sm-4 col-xs-6"><img src="images/clients/2.png" class="img-responsive wow fadeInUp" alt=""></div>
+                                            <div class="col-md-2 col-sm-4 col-xs-6"><img src="images/clients/3.png" class="img-responsive wow fadeInUp" alt=""></div>
+                                            <div class="col-md-2 col-sm-4 col-xs-6"><img src="images/clients/4.png" class="img-responsive wow fadeInUp" alt=""></div>
+                                            <div class="col-md-2 col-sm-4 col-xs-6"><img src="images/clients/5.png" class="img-responsive wow fadeInUp" alt=""></div>
+                                            <div class="col-md-2 col-sm-4 col-xs-6"><img src="images/clients/6.png" class="img-responsive wow fadeInUp" alt=""></div>
+                                        </div>
+                                    </div>
+                                </section>-->
+
+        <section id="footer-top" class="footer-top">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4 col-lg-4">
+
+                <div class="footer-top-box">
+                    <h4>Prefeitura Municipal <br> Presidente Bernardes</h4>
+                    <hr>
+                    <h4>Atendimento</h4>
+                    <b>Seg-Sex :</b> 07:00h - 16:00h<br/>
+                </div>
+                
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="footer-top-box">
+                    <h4>e-Sic Presencial</h4>
+                    <p> RUA SÃO JOSÉ, 21 - CENTRO <br>CEP: 36475-000<br/>
+                        (32) 3564-0000<br/>
+                        contato@presidentebernardes.mg.gov.br </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="footer-top-box">
+                    <img src="images/logo-vertical.svg" width="100%">
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id = "footer-bottom" class = "footer-bottom">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-10 col-lg-10">
+                <div class = "copyright">&copy; Prefeitura Municipal de Presidente Bernardes - MG <!--| ADM 2017-2020 | Governo do Povo.--></div>
+            </div>
+            <div class = "col-lg-2">
+                <a href = "mailto:atendimento@eduardofeliciano.com.br" title = "Sites e Portais para Órgãos Públicos - (32) 9 88712728">&nbsp;
+                    &nbsp;
+                    <img src = "images/ef4.png" width = "100px"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ACESSIBILIDADE -->
+<!-- ACESSIBILIDADE -->
+<div id="menuAcessibilidade">
+    <div class="content-menuAcessibilidade">
+        <h2 class="similar-h4">ACESSIBILIDADE</h2>
+        <!-- <p class="lineh20">
+             Para navega&ccedil;&atilde;o via teclado, utilize a combina&ccedil;&atilde;o de teclas
+             conforme o modelo abaixo:<br>
+             <span class="altExemploAcessibilidade" style="background-color: #E6E6E6">
+                 <strong class="uppercase"></strong>
+             </span>&nbsp;+&nbsp;
+             <span class="styleBackgroundLight altExemploAcessibilidade">
+                 [<strong>N&ordm;</strong> de atalho]
+             </span>
+         </p>-->
+        <p class="nomargin-bottom">Atalhos de navega&ccedil;&atilde;o:</p>
+        <div class="row">
+            <div class="col-md-12">
+                <a id="linkConteudo" accesskey="1" title="Ir para conte&uacute;do " href="#section2">
+                    <div class="numberAcessibilidade text-center styleBackgroundLight"><span class="spanAccesskey"><strong>1</strong></span></div>
+                    <small>Ir para o</small> <strong>conte&uacute;do</strong>
+                </a>
+            </div>
+            <div class="col-md-12">
+                <a accesskey="2" title="Ir para o menu " href="#header">
+                    <div class="numberAcessibilidade text-center styleBackgroundLight"><span class="spanAccesskey"><strong>2</strong></span></div>
+                    <small>Ir para o</small> <strong>menu</strong>
+                </a>
+            </div>
+            <!--<div class="col-md-12">
+                <a id="linkBusca" accesskey="3" title="Ir para a busca " href="index.html#">
+                    <div class="numberAcessibilidade text-center styleBackgroundLight"><span class="spanAccesskey"><strong>3</strong></span></div>
+                    <small>Ir para a</small> <strong>busca</strong>
+                </a>
+            </div>-->
+            <div class="col-md-12">
+                <a accesskey="3" title="Ir para o rodap&eacute; " href="#footer-top">
+                    <div class="numberAcessibilidade text-center styleBackgroundLight"><span class="spanAccesskey"><strong>3</strong></span></div>
+                    <small>Ir para o</small> <strong>rodap&eacute;</strong>
+                </a>
+            </div>
+            <!--<div class="col-md-12">
+                <a accesskey="5" title="Página de Acessibilidade " href="acessibilidade.1">
+                    <div class="numberAcessibilidade text-center styleBackgroundLight"><span class="spanAccesskey"><strong>5</strong></span></div>
+                    <strong>Acessibilidade</strong>
+                </a>
+            </div>
+            <div class="col-md-12">
+                <a accesskey="6" title="Mapa do site " href="sitemap">
+                    <div class="numberAcessibilidade text-center styleBackgroundLight"><span class="spanAccesskey"><strong>6</strong></span></div>
+                    <strong>Mapa do site</strong>
+                </a>
+            </div>-->
+        </div>
+
+        <div class="margin-top10">
+            <p class="nomargin-bottom">Atalhos para contraste do site:</p>
+            <label for='acessibilidadeCorOriginal'>
+                <input title="cor original" accesskey="3" class="contraste" type="radio" name="color_skin" value="original" checked="checked" id="acessibilidadeCorOriginal"/>
+                <span class="numberAcessibilidade text-center styleBackgroundLight"><span class="spanAccesskey"><strong>4</strong></span></span>
+                Cor original
+            </label>
+            <label for='acessibilidadeContrate'>
+                <input title="contraste" accesskey="4" class="contraste" type="radio" name="color_skin" value="contraste" id="acessibilidadeContrate"/>
+                <span class="numberAcessibilidade text-center styleBackgroundLight"><span class="spanAccesskey"><strong>5</strong></span></span>
+                Com contraste
+            </label><hr />
+        </div>
+
+        <p class="nomargin-bottom">Tamanho da fonte:</p>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 desktop-pr3 text-center">
+                <a <a href="#" data-contraste="0" title="Sem Contraste" title="Diminir Fonte" href="javascript:;" id="diminuirFonte" class="btn btn-default btn-block btn-sm">
+                        <i class="fa fa-font"></i><i class="fa fa-minus"></i>
+                    </a>
+            </div>
+            <div class="col-md-6 col-xs-12 desktop-pl3 text-center">
+                <a title="Aumentar Fonte" href="javascript:;" id="aumentarFonte" class="btn btn-default btn-block btn-sm">
+                    <i class="fa fa-font"></i><i class="fa fa-plus"></i>
+                </a>
+            </div>
+            <div class="col-md-12 col-xs-12 text-center">
+                <a id='fonteOriginal' title="Fonte Original" href="javascript:;" class="btn btn-default btn-block btn-sm">
+                    <i class="fa fa-font"></i><i class="fa fa-refresh"></i>
+                </a>
+            </div>
+        </div>
+
+        <a href="index.html#" title="fechar" id="hideMenuAcessibilidade">&times;<span class="oculto">fechar</span></a>
+    </div>
+</div>
+<a accesskey="0" href="index.html#" id="showMenuAcessibilidade" class="styleSecondColor hidden-xs hidden-sm" title="Acessibilidade">
+    <div id="iconMenuAcessibilidade" class="text-center"><i class="fa fa-wheelchair styleColor" style="font-size:1.05em;margin-bottom:10px;"></i></div>
+    <div id="textMenuAcessibilidade" class="text-center" style="font-size: 0.5em;line-height: 12px;">
+        <span class="styleColor">ACESSIBILIDADE</span><br>
+        <span class="uppercase"></span><span>+0</span>
+    </div>
+</a>
+<!-- /ACESSIBILIDADE --><script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.plugin.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script> 
+<script src="js/jquery.magnific-popup.min.js"></script> 
+<script src="js/bootstrap-dropdownhover.min.js"></script>
+<script src="js/wow.min.js"></script> 
+<script src="js/waypoints.min.js"></script> 
+<script src="js/jquery.counterup.min.js"></script> 
+<script src="js/main.js"></script>
+
+
+<script src="js/acessibilidade.js"></script>    </body>
+</html>
