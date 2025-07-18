@@ -104,6 +104,21 @@ $(document).ready(function() {
 
 
 
+// Ativar contraste
+document.getElementById('acessibilidadeContrate').addEventListener('change', function() {
+    if (this.checked) {
+        document.body.classList.add('contraste');
+    }
+});
+
+// Voltar ao original
+document.getElementById('acessibilidadeCorOriginal').addEventListener('change', function() {
+    if (this.checked) {
+        document.body.classList.remove('contraste');
+    }
+});
+
+
 /** 09. Toggle (Reescrevo funÃƒÂ§ÃƒÂ£o _toggle para funcionar com a tag (span.toogle-span))
  **************************************************************** **/
 function _toggleVisaoi() {

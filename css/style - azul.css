@@ -1883,3 +1883,28 @@ p {
     font-size: 12px;
     font-weight: 600;
 }
+
+/* Contraste alto para acessibilidade */
+body.contraste,
+body.contraste * {
+    background: #000 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+body.contraste a,
+body.contraste a:visited,
+body.contraste a:active {
+    color: #ff0 !important;
+    text-decoration: underline !important;
+}
+
+body.contraste .navbar,
+body.contraste .dropdown-menu {
+    background: #111 !important;
+}
+
+body.contraste img,
+body.contraste video {
+    filter: grayscale(1) contrast(1.5);
+}
