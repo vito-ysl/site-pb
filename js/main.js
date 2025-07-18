@@ -14,145 +14,137 @@ Designed By: rkwebdesigns
 
 
 
-(function ($) {
+(function($) {
 
-	"use strict";
+    "use strict";
 
 
 
-    jQuery(document).ready(function($){
+    jQuery(document).ready(function($) {
 
-	    
 
-		//carousel active
+
+        //carousel active
 
         $(".carousel-inner .item:first-child").addClass("active");
 
-		
 
-		//Fixed nav on scroll
 
-		$(document).scroll(function(e){
+        //Fixed nav on scroll
 
-			var scrollTop = $(document).scrollTop();
+        $(document).scroll(function(e) {
 
-			if(scrollTop > $('nav').height()){
+            var scrollTop = $(document).scrollTop();
 
-				//console.log(scrollTop);
+            if (scrollTop > $('nav').height()) {
 
-				$('nav').addClass('navbar-fixed-top');
+                //console.log(scrollTop);
 
-			}
+                $('nav').addClass('navbar-fixed-top');
 
-			else {
+            } else {
 
-				$('nav').removeClass('navbar-fixed-top');
+                $('nav').removeClass('navbar-fixed-top');
 
-			}
+            }
 
-		});
+        });
 
-			
 
-		//Portfolio Popup
 
-		$('.magnific-popup').magnificPopup({type:'image'});
+        //Portfolio Popup
 
-		
+        $('.magnific-popup').magnificPopup({
+            type: 'image'
+        });
 
-		
 
-		
 
-			
 
     });
 
 
 
-	
+
+    jQuery(window).load(function() {
 
 
 
-    jQuery(window).load(function(){
+        //Numaric Counter
 
-		
+        $('.counter').counterUp({
 
-		//Numaric Counter
+            delay: 10,
 
-		$('.counter').counterUp({
+            time: 1000
 
-          delay: 10,
-
-          time: 1000
-
-        });		
-
-				
-
-		//Portfolio container			
-
-		var $container = $('.portfolioContainer');
-
-		$container.isotope({
-
-			filter: '*',
-
-			animationOptions: {
-
-				duration: 750,
-
-				easing: 'linear',
-
-				queue: false
-
-			}
-
-		});
-
- 
-
-		$('.portfolioFilter a').on('click', function(){
-
-			$('.portfolioFilter a').removeClass('current');
-
-			$(this).addClass('current');
-
-	 
-
-			var selector = $(this).attr('data-filter');
-
-			$container.isotope({
-
-				filter: selector,
-
-				animationOptions: {
-
-					duration: 750,
-
-					easing: 'linear',
-
-					queue: false
-
-				}
-
-			 });
-
-			 return false;
-
-		}); 
+        });
 
 
 
-	});
+        //Portfolio container			
+
+        var $container = $('.portfolioContainer');
+
+        $container.isotope({
+
+            filter: '*',
+
+            animationOptions: {
+
+                duration: 750,
+
+                easing: 'linear',
+
+                queue: false
+
+            }
+
+        });
+
+
+
+        $('.portfolioFilter a').on('click', function() {
+
+            $('.portfolioFilter a').removeClass('current');
+
+            $(this).addClass('current');
+
+
+
+            var selector = $(this).attr('data-filter');
+
+            $container.isotope({
+
+                filter: selector,
+
+                animationOptions: {
+
+                    duration: 750,
+
+                    easing: 'linear',
+
+                    queue: false
+
+                }
+
+            });
+
+            return false;
+
+        });
+
+
+
+    });
 
 
 
     //CONTACT FORM 
 
-      
 
-    $("#contact").submit(function (e) {
+
+    $("#contact").submit(function(e) {
 
         e.preventDefault();
 
@@ -186,7 +178,7 @@ Designed By: rkwebdesigns
 
                 data: dataString,
 
-                success: function () {
+                success: function() {
 
                     $('.success').fadeIn(1000);
 
@@ -196,9 +188,7 @@ Designed By: rkwebdesigns
 
             });
 
-        }
-
-        else {
+        } else {
 
             $('.error').fadeIn(1000);
 
@@ -210,64 +200,64 @@ Designed By: rkwebdesigns
 
     });
 
-	//Tabs
+    //Tabs
 
-	function jQueryTabs2() {
-	    $(".tabs2").each(function() {
-	        $(".tabs-panel2").not(":first").hide(), $("li", this).removeClass("active"), $("li:first-child", this).addClass("active"), $(".tabs-panel:first-child").show(), $("li", this).click(function(t) {
-	            var i = $("a", this).attr("href");
-	            $(this).siblings().removeClass("active"), $(this).addClass("active"), $(i).siblings().hide(), $(i).fadeIn(400), t.preventDefault()
-	        }), $(window).width() < 100 && $(".tabs-panel2").show()
-	    })
-	}
-	$(document).ready(function() {
-	    jQueryTabs2(), $(".tabs2 li a").each(function() {
-	        var t = $(this).attr("href"),
-	            i = $(this).html();
-	        $(t + " .tab-title2").prepend("<p><strong>" + i + "</strong></p>")
-	    })
-	}), $(window).resize(function() {
-	    jQueryTabs2()
-	});
+    function jQueryTabs2() {
+        $(".tabs2").each(function() {
+            $(".tabs-panel2").not(":first").hide(), $("li", this).removeClass("active"), $("li:first-child", this).addClass("active"), $(".tabs-panel:first-child").show(), $("li", this).click(function(t) {
+                var i = $("a", this).attr("href");
+                $(this).siblings().removeClass("active"), $(this).addClass("active"), $(i).siblings().hide(), $(i).fadeIn(400), t.preventDefault()
+            }), $(window).width() < 100 && $(".tabs-panel2").show()
+        })
+    }
+    $(document).ready(function() {
+        jQueryTabs2(), $(".tabs2 li a").each(function() {
+            var t = $(this).attr("href"),
+                i = $(this).html();
+            $(t + " .tab-title2").prepend("<p><strong>" + i + "</strong></p>")
+        })
+    }), $(window).resize(function() {
+        jQueryTabs2()
+    });
 
-	
-	// Accordion
-	
-	(function() {
 
-		var $container = $('.acc-container'),
-			$trigger   = $('.acc-trigger');
+    // Accordion
 
-		$container.hide();
-		$trigger.first().addClass('active').next().show();
+    (function() {
 
-		var fullWidth = $container.outerWidth(true);
-		$trigger.css('width', fullWidth);
-		$container.css('width', fullWidth);
-		
-		$trigger.on('click', function(e) {
-			if( $(this).next().is(':hidden') ) {
-				$trigger.removeClass('active').next().slideUp(300);
-				$(this).toggleClass('active').next().slideDown(300);
-			}
-			e.preventDefault();
-		});
+        var $container = $('.acc-container'),
+            $trigger = $('.acc-trigger');
 
-		// Resize
-		$(window).on('resize', function() {
-			fullWidth = $container.outerWidth(true)
-			$trigger.css('width', $trigger.parent().width() );
-			$container.css('width', $container.parent().width() );
-		});
+        $container.hide();
+        $trigger.first().addClass('active').next().show();
 
-	})();
+        var fullWidth = $container.outerWidth(true);
+        $trigger.css('width', fullWidth);
+        $container.css('width', fullWidth);
 
-	
+        $trigger.on('click', function(e) {
+            if ($(this).next().is(':hidden')) {
+                $trigger.removeClass('active').next().slideUp(300);
+                $(this).toggleClass('active').next().slideDown(300);
+            }
+            e.preventDefault();
+        });
 
-	//Wow js
+        // Resize
+        $(window).on('resize', function() {
+            fullWidth = $container.outerWidth(true)
+            $trigger.css('width', $trigger.parent().width());
+            $container.css('width', $container.parent().width());
+        });
 
-	new WOW().init();
+    })();
 
-	 
 
-}(jQuery));	
+
+    //Wow js
+
+    new WOW().init();
+
+
+
+}(jQuery));
