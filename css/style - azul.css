@@ -1090,7 +1090,7 @@ p {
     padding: 25px 0;
     /*background-color: #1a1e21;*/
     background-color: #06589C;
-    color: #7e7e7e;
+    color: #ddd; /* cor do footer modificado, pois muitos não conseguem enxegar*/
     font-size: 14px !important;
 }
 
@@ -1892,6 +1892,7 @@ body.contraste * {
     border-color: #fff !important;
 }
 
+
 body.contraste a,
 body.contraste a:visited,
 body.contraste a:active {
@@ -1907,4 +1908,9 @@ body.contraste .dropdown-menu {
 body.contraste img,
 body.contraste video {
     filter: grayscale(1) contrast(1.5);
+}
+
+body.contraste #main-slide .item {
+    background-color: #000 !important;
+    background-image: none !important;
 }
