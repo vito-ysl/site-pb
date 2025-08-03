@@ -547,13 +547,15 @@ p {
 
 /* Carousel control */
 
+
+
 .carousel-indicators li {
     width: 10px;
     height: 10px;
     margin: 1px;
     border-radius: 100%;
     border: 0;
-    background: rgba(255, 255, 255, .5);
+    background: rgb(255, 255, 255);
 }
 
 #main-slide .carousel-indicators li.active,
@@ -585,8 +587,11 @@ p {
 #main-slide:hover .carousel-control.right,
 #main-slide:hover .carousel-indicators {
     opacity: 1;
-    filter: alpha(opacity=100);
+    transition: opacity 0.25s ease;
+    background-color: transparent;
 }
+
+
 
 #main-slide .carousel-control .fa-angle-left,
 #main-slide .carousel-control .fa-angle-right {
@@ -609,7 +614,7 @@ p {
 #main-slide .carousel-control i {
     background-attachment: scroll;
     background-clip: border-box;
-    background-color: rgba(0, 174, 240, 0.5);
+    background-color: rgba(6, 88, 156, 0.8);
     background-image: none !important;
     background-origin: padding-box;
     background-position: 0 0;
@@ -625,6 +630,43 @@ p {
 
 #main-slide .carousel-control i:hover {
     background: #06589C;
+}
+
+/* Remover fundo preto dos controles do carrossel */
+#main-slide .carousel-control {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    background-position: 0 0 !important;
+    background-origin: padding-box !important;
+    background-clip: border-box !important;
+    background-attachment: scroll !important;
+}
+
+#main-slide .carousel-control:focus {
+    background: transparent !important;
+    outline: none !important;
+    background-image: none !important;
+}
+
+#main-slide .carousel-control:hover {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+#main-slide .carousel-control.left,
+#main-slide .carousel-control.right {
+    background: transparent !important;
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    background-position: 0 0 !important;
+    background-origin: padding-box !important;
+    background-clip: border-box !important;
+    background-attachment: scroll !important;
 }
 
 .carousel .item.active .effect2 {
@@ -1897,7 +1939,7 @@ body.contraste a,
 body.contraste a:visited,
 body.contraste a:active {
     color: #ff0 !important;
-    text-decoration: underline !important;
+    text-decoration: underline !important;  
 }
 
 body.contraste .navbar,
@@ -1914,3 +1956,5 @@ body.contraste #main-slide .item {
     background-color: #000 !important;
     background-image: none !important;
 }
+
+
